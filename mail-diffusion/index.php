@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <!-- META DATA -->
-	<title>Codelander | HTML Landing Page by Codefest&trade;</title>
+	<title>Mail-Difussion&trade;</title>
     <meta name="description" content="Codelander is a multi-purpose HTML landing page template by Codefest&trade;. Purchase now.">
 	<meta name="keywords" content="Codelander,Codefest">
 	<meta name="author" content="Codefest">
@@ -100,7 +100,7 @@
 					</ul>
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link learn-more-btn" data-target="#myModal" data-toggle="modal" role="button">Signup</a>
+							<a class="nav-link learn-more-btn" data-target="#modalsuscribete" data-toggle="modal" role="button">Signup</a>
 						</li>
 					</ul>
 				</div>
@@ -463,6 +463,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="public\assets\js\owl\owl.carousel.js"></script>
 	<script src="public\assets\js\accordian.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="index.js"></script>
   	<!-- Header scroll -->
 		<script type="text/javascript">

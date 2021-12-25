@@ -22,7 +22,7 @@ function guardar(e) {
         processData: false,
         success: function(data) {
 
-            // $("#modalsuscribete").modal('hide');
+            $("#modalsuscribete").modal('hide');
 
             console.log("Data es :", data);
 
@@ -32,24 +32,24 @@ function guardar(e) {
             //         console.log(data);
             //     });
 
-            //     Swal.fire({
-            //         icon: 'success',
-            //         title: 'MailDiffusion',
-            //         text: 'Gracias por suscribirte!',
-            //         showConfirmButton: false,
-            //         timer: 2000
-            //     })
+            Swal.fire({
+                icon: 'success',
+                title: 'MailDiffusion',
+                text: 'Gracias por suscribirte!',
+                showConfirmButton: false,
+                timer: 2000
+            })
 
             //     $("#usu_correo").val('');
             // } else {
             //     console.log("Error");
-            //     /*Swal.fire({
+            //     Swal.fire({
             //         icon: 'error',
             //         title: 'MailDiffusion',
             //         text: 'Correo ya suscrito!',
             //         showConfirmButton: false,
             //         timer: 2000
-            //     })*/
+            //     })
 
             // }
 

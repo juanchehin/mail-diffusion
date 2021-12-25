@@ -1,4 +1,4 @@
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="modalsuscribete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog">
 				<form method="post" id="usuario_form">
 					<div class="modal-content">
