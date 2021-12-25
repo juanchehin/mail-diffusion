@@ -26,32 +26,32 @@ function guardar(e) {
 
             console.log("Data es :", data);
 
-            // if (data == 1) {
-            //     console.log("Data 1 es :", data);
-            //     $.post("controller/usuario.php?op=emailBienvenida", { usu_correo: $("#usu_correo").val() }, function(data) {
-            //         console.log(data);
-            //     });
+            if (data == 1) {
+                console.log("Data 1 es :", data);
+                $.post("controller/usuario.php?op=emailBienvenida", { usu_correo: $("#usu_correo").val() }, function(data) {
+                    console.log(data);
+                });
 
-            Swal.fire({
-                icon: 'success',
-                title: 'MailDiffusion',
-                text: 'Gracias por suscribirte!',
-                showConfirmButton: false,
-                timer: 2000
-            })
+                Swal.fire({
+                    icon: 'success',
+                    title: 'MailDiffusion',
+                    text: 'Gracias por suscribirte!',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
 
-            //     $("#usu_correo").val('');
-            // } else {
-            //     console.log("Error");
-            //     Swal.fire({
-            //         icon: 'error',
-            //         title: 'MailDiffusion',
-            //         text: 'Correo ya suscrito!',
-            //         showConfirmButton: false,
-            //         timer: 2000
-            //     })
+                $("#usu_correo").val('');
+            } else {
+                console.log("Error");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Correo ya suscrito!',
+                    showConfirmButton: false,
+                    timer: 2000
+                })
 
-            // }
+            }
 
         }
     });
