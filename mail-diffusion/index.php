@@ -100,7 +100,7 @@
 					</ul>
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link learn-more-btn" href="#">Signup</a>
+							<a class="nav-link learn-more-btn" data-target="#myModal" data-toggle="modal" role="button">Signup</a>
 						</li>
 					</ul>
 				</div>
@@ -450,6 +450,29 @@
                 <!-- FOOTER CREDITS -->
 				<div class="container footer-credits">
 					<p>&copy; 2020 <a href="https://www.codefest.co.uk" target="_blank" title="Codefest">Codefest</a>&trade;. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- MODAL -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Subcribete</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="basic-addon1">@</span>
+					<input type="text" class="form-control" placeholder="Correo electronico" aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adip </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Registrarse</button>
+					<button type="button" class="btn btn-primary">Cerrar</button>
+				</div>
 				</div>
 			</div>
 		</div>
