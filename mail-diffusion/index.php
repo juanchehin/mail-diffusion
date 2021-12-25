@@ -455,29 +455,7 @@
 		</div>
 
 		<!-- MODAL -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog">
-				<form method="post" id="usuarios_form">
-					<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Subcribete</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					<div class="input-group mb-3">
-						<span class="input-group-text" id="basic-addon1">@</span>
-							<input type="email" class="form-control" placeholder="Correo electronico" aria-label="Username" aria-describedby="basic-addon1" required>
-						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adip </p>
-					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Registrarse</button>
-						<button type="button" class="btn btn-primary">Cerrar</button>
-					</div>
-					</div>
-				</form>
-			</div>
-		</div>
+		<?php require_once("modal.php") ?>
 
 	<!-- FOOTER SCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -485,6 +463,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="public\assets\js\owl\owl.carousel.js"></script>
 	<script src="public\assets\js\accordian.js"></script>
+	<script src="index.js"></script>
   	<!-- Header scroll -->
 		<script type="text/javascript">
 				$(window).scroll(function() {
