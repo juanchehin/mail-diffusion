@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Vendors Min CSS -->
-        <link rel="stylesheet" href="assets\css\vendors.min.css">
+        <link rel="stylesheet" href="../../public/css/vendors.min.css">
         <!-- Style CSS -->
-        <link rel="stylesheet" href="assets\css\style.css">
+        <link rel="stylesheet" href="..\..\public\css\style.css">
         <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets\css\responsive.css">
+        <link rel="stylesheet" href="..\..\public\css\responsive.css">
 
         <title>Fiva - Bootstrap 4 Admin Dashboard Template</title>
 
-        <link rel="icon" type="image/png" href="assets\img\favicon.png">
+        <link rel="icon" type="image/png" href="..\..\public\img\favicon.png">
     </head>
 
     <body>
@@ -23,7 +23,7 @@
         <div class="sidemenu-area">
             <div class="sidemenu-header">
                 <a href="dashboard-analytics.html" class="navbar-brand d-flex align-items-center">
-                    <img src="assets\img\small-logo.png" alt="image">
+                    <img src="..\..\public\img\small-logo.png" alt="image">
                     <span>Fiva</span>
                 </a>
 
@@ -803,42 +803,42 @@
                                 <div class="dropdown-body">
                                     <div class="d-flex flex-wrap align-items-center">
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-account.png" alt="image">
+                                            <img src="..\..\public\img\icon-account.png" alt="image">
                                             <span class="d-block mb-0">Account</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-google.png" alt="image">
+                                            <img src="..\..\public\img\icon-google.png" alt="image">
                                             <span class="d-block mb-0">Search</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-map.png" alt="image">
+                                            <img src="..\..\public\img\icon-map.png" alt="image">
                                             <span class="d-block mb-0">Maps</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-youtube.png" alt="image">
+                                            <img src="..\..\public\img\icon-youtube.png" alt="image">
                                             <span class="d-block mb-0">YouTube</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-playstore.png" alt="image">
+                                            <img src="..\..\public\img\icon-playstore.png" alt="image">
                                             <span class="d-block mb-0">Play</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-gmail.png" alt="image">
+                                            <img src="..\..\public\img\icon-gmail.png" alt="image">
                                             <span class="d-block mb-0">Gmail</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-drive.png" alt="image">
+                                            <img src="..\..\public\img\icon-drive.png" alt="image">
                                             <span class="d-block mb-0">Drive</span>
                                         </a>
 
                                         <a href="#" class="dropdown-item">
-                                            <img src="assets\img\icon-calendar.png" alt="image">
+                                            <img src="..\..\public\img\icon-calendar.png" alt="image">
                                             <span class="d-block mb-0">Calendar</span>
                                         </a>
                                     </div>
@@ -865,7 +865,7 @@
 
                         <li class="nav-item dropdown language-switch-nav-item">
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets\img\us-flag.jpg" alt="image">
+                                <img src="..\..\public\img\us-flag.jpg" alt="image">
                                 <span>English <i class='bx bx-chevron-down'></i></span>
                             </a>
 
@@ -873,31 +873,31 @@
                                 <a href="#" class="dropdown-item d-flex justify-content-between align-items-center">
                                     <span>German</span>
 
-                                    <img src="assets\img\germany-flag.jpg" alt="flag">
+                                    <img src="..\..\public\img\germany-flag.jpg" alt="flag">
                                 </a>
 
                                 <a href="#" class="dropdown-item d-flex justify-content-between align-items-center">
                                     <span>French</span>
 
-                                    <img src="assets\img\france-flag.jpg" alt="flag">
+                                    <img src="..\..\public\img\france-flag.jpg" alt="flag">
                                 </a>
 
                                 <a href="#" class="dropdown-item d-flex justify-content-between align-items-center">
                                     <span>Spanish</span>
 
-                                    <img src="assets\img\spain-flag.jpg" alt="flag">
+                                    <img src="..\..\public\img\spain-flag.jpg" alt="flag">
                                 </a>
 
                                 <a href="#" class="dropdown-item d-flex justify-content-between align-items-center">
                                     <span>Russian</span>
 
-                                    <img src="assets\img\russia-flag.jpg" alt="flag">
+                                    <img src="..\..\public\img\russia-flag.jpg" alt="flag">
                                 </a>
 
                                 <a href="#" class="dropdown-item d-flex justify-content-between align-items-center">
                                     <span>Italian</span>
 
-                                    <img src="assets\img\italy-flag.jpg" alt="flag">
+                                    <img src="..\..\public\img\italy-flag.jpg" alt="flag">
                                 </a>
                             </div>
                         </li>
@@ -920,7 +920,7 @@
                                 <div class="dropdown-body">
                                     <a href="#" class="dropdown-item d-flex align-items-center">
                                         <div class="figure">
-                                            <img src="assets\img\user1.jpg" class="rounded-circle" alt="image">
+                                            <img src="..\..\public\img\user1.jpg" class="rounded-circle" alt="image">
                                         </div>
 
                                         <div class="content d-flex justify-content-between align-items-center">
@@ -934,7 +934,7 @@
 
                                     <a href="#" class="dropdown-item d-flex align-items-center">
                                         <div class="figure">
-                                            <img src="assets\img\user2.jpg" class="rounded-circle" alt="image">
+                                            <img src="..\..\public\img\user2.jpg" class="rounded-circle" alt="image">
                                         </div>
 
                                         <div class="content d-flex justify-content-between align-items-center">
@@ -948,7 +948,7 @@
 
                                     <a href="#" class="dropdown-item d-flex align-items-center">
                                         <div class="figure">
-                                            <img src="assets\img\user3.jpg" class="rounded-circle" alt="image">
+                                            <img src="..\..\public\img\user3.jpg" class="rounded-circle" alt="image">
                                         </div>
 
                                         <div class="content d-flex justify-content-between align-items-center">
@@ -962,7 +962,7 @@
 
                                     <a href="#" class="dropdown-item d-flex align-items-center">
                                         <div class="figure">
-                                            <img src="assets\img\user4.jpg" class="rounded-circle" alt="image">
+                                            <img src="..\..\public\img\user4.jpg" class="rounded-circle" alt="image">
                                         </div>
 
                                         <div class="content d-flex justify-content-between align-items-center">
@@ -1063,14 +1063,14 @@
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="menu-profile">
                                     <span class="name">Hi! Andro</span>
-                                    <img src="assets\img\user1.jpg" class="rounded-circle" alt="image">
+                                    <img src="..\..\public\img\user1.jpg" class="rounded-circle" alt="image">
                                 </div>
                             </a>
 
                             <div class="dropdown-menu">
                                 <div class="dropdown-header d-flex flex-column align-items-center">
                                     <div class="figure mb-3">
-                                        <img src="assets\img\user1.jpg" class="rounded-circle" alt="image">
+                                        <img src="..\..\public\img\user1.jpg" class="rounded-circle" alt="image">
                                     </div>
 
                                     <div class="info text-center">
@@ -1158,23 +1158,23 @@
         
 
         <!-- Vendors Min JS -->
-        <script src="assets\js\vendors.min.js"></script>
+        <script src="..\..\public\js\vendors.min.js"></script>
 
         <!-- ApexCharts JS -->
-        <script src="assets\js\apexcharts\apexcharts.min.js"></script>
-        <script src="assets\js\apexcharts\apexcharts-stock-prices.js"></script>
-        <script src="assets\js\apexcharts\apexcharts-irregular-data-series.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-line-chart.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-pie-donut-chart.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-area-charts.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-column-chart.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-bar-charts.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-mixed-charts.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-radialbar-charts.js"></script>
-        <script src="assets\js\apexcharts\apex-custom-radar-chart.js"></script>
+        <script src="..\..\public\js\apexcharts\apexcharts.min.js"></script>
+        <script src="..\..\public\js\apexcharts\apexcharts-stock-prices.js"></script>
+        <script src="..\..\public\js\apexcharts\apexcharts-irregular-data-series.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-line-chart.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-pie-donut-chart.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-area-charts.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-column-chart.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-bar-charts.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-mixed-charts.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-radialbar-charts.js"></script>
+        <script src="..\..\public\js\apexcharts\apex-custom-radar-chart.js"></script>
 
         <!-- ChartJS -->
-        <script src="assets\js\chartjs\chartjs.min.js"></script>
+        <script src="..\..\public\js\chartjs\chartjs.min.js"></script>
         <div class="chartjs-colors"> <!-- To use template colors with Javascript -->
             <div class="bg-primary"></div>
             <div class="bg-primary-light"></div>
@@ -1189,10 +1189,10 @@
         </div>
         
         <!-- jvectormap Min JS -->
-        <script src="assets\js\jvectormap-1.2.2.min.js"></script>
+        <script src="..\..\public\js\jvectormap-1.2.2.min.js"></script>
         <!-- jvectormap World Mil JS -->
-        <script src="assets\js\jvectormap-world-mill-en.js"></script>
+        <script src="..\..\public\js\jvectormap-world-mill-en.js"></script>
         <!-- Custom JS -->
-        <script src="assets\js\custom.js"></script>
+        <script src="..\..\public\js\custom.js"></script>
     </body>
 </html>

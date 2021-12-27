@@ -2,13 +2,8 @@
     class Usuario extends Conectar {
         /* Insertar Correo Electronico en la Base de datos */
         public function insert_correo($usu_correo) { 
-                    // fclose($file);
-
-            
-
             $conectar = parent::conexion();
             parent::set_names();
-            // $sql="insert into tm_usuarios (usu_correo,rol_id,fech_crea,est) values (?,1,now(),1)";
             $sql="insert into tm_usuarios(usu_correo,fech_crea,est,,rol_id) values ('$usu_correo',now(),1,1);";            
             $sql=$conectar->prepare($sql);
             // $sql->bindValue(1, $usu_correo);
