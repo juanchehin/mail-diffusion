@@ -1,0 +1,1 @@
+pasa insert_correo y sql es : insert into tm_usuarios(usu_correo,fech_crea,est) values ('tes3@test.com',now(),1);
