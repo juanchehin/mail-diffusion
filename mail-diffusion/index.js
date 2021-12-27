@@ -24,8 +24,6 @@ function guardar(e) {
 
             $("#modalsuscribete").modal('hide');
 
-            console.log("Data es :", data);
-
             if (data == 1) {
                 console.log("Data 1 es :", data);
                 $.post("controller/usuario.php?op=emailBienvenida", { usu_correo: $("#usu_correo").val() }, function(data) {
