@@ -8,10 +8,10 @@
                 $correo = $_POST["correo"];
                 $password = $_POST["password"];
                 if (empty($correo) and empty($password)) {
-                    header("Location: " . Conectar::ruta() . "/index.php?m=2");
+                    header("Location: " . Conectar::ruta() . "index.php?m=2");
                     exit();
                 }else{
-                    $sql="SELECT * FROM tm_usuario WHERE usu_correo=? and usu_pass=? and rol_id = 2";
+                    $sql="SELECT * FROM tm_usuarios WHERE usu_correo=? and usu_pass=? and rol_id = 2";
                     $sql=$conectar->prepare($sql);
                     $sql->bindValue(1,$correo);
                     $sql->bindValue(2,$password);
@@ -23,10 +23,10 @@
                         $_SESSION["usu_apep"]=$resultado["usu_apep"];
                         $_SESSION["usu_apem"]=$resultado["usu_apem"];
                         $_SESSION["usu_correo"]=$resultado["usu_correo"];
-                        header("Location: " . Conectar::ruta() . "view/home/");
+                        header("Location: " . Conectar::ruta() . "views/home");
                         exit();
                     }else{
-                        header("Location: " . Conectar::ruta() . "/index.php?m=1");
+                        header("Location: " . Conectar::ruta() . "index.php?m=1");
                         exit();
                     }
                 }

@@ -40,8 +40,38 @@
                         <h2>Bienvenido</h2>
 
                         <form action="" method="post">
+
+                        <?php
+                                if (isset($_GET["m"])){
+                                    switch ($_GET["m"]){
+                                        case "1":
+                                            ?>
+                                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                    <strong>Error!</strong> Sus datos estan incorrectos por favor verificar.
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            <?php
+                                        break;
+
+                                        case "2":
+                                            ?>
+                                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                    <strong>Error!</strong> Existen datos vacios por favor verificar.
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            <?php
+                                        break;
+
+                                    }
+                                }
+                            ?>
+
                             <div class="form-group">
-                                <input type="text" class="form-control" id="correo" name="correo" placeholder="Email">
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Email">
                                 <span class="label-title"><i class='bx bx-user'></i></span>
                             </div>
 

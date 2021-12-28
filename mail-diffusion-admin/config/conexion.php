@@ -23,7 +23,7 @@
 
         /* Ruta principal del proyecto */
         public static function ruta(){
-            return "http://localhost/mail-diffusion/mail-diffusion-admin";
+            return "http://localhost/mail-diffusion/mail-diffusion-admin/";
         }
     }
 ?>
