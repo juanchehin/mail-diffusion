@@ -12,7 +12,7 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="..\..\public\css\responsive.css">
 
-        <title>Fiva - Bootstrap 4 Admin Dashboard Template</title>
+        <title>Mail diffusion - Admin</title>
 
         <link rel="icon" type="image/png" href="..\..\public\img\favicon.png">
     </head>
@@ -23,8 +23,7 @@
         <div class="sidemenu-area">
             <div class="sidemenu-header">
                 <a href="dashboard-analytics.html" class="navbar-brand d-flex align-items-center">
-                    <img src="..\..\public\img\small-logo.png" alt="image">
-                    <span>Fiva</span>
+                    <img src="..\..\public\img\logo-mail.png" alt="image">
                 </a>
 
                 <div class="burger-menu d-none d-lg-block">
@@ -1110,7 +1109,7 @@
                                 <div class="dropdown-footer">
                                     <ul class="profile-nav">
                                         <li class="nav-item">
-                                            <a href="#" class="nav-link">
+                                            <a href="../../views/html/logout.php" class="nav-link">
                                                 <i class='bx bx-log-out'></i> <span>Logout</span>
                                             </a>
                                         </li>
