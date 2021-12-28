@@ -2,15 +2,16 @@
     class Usuario extends Conectar {
         public function login() {
             $conectar = parent::conexion();
+            
             parent::set_names();
             if (isset($_POST["enviar"])) {
                 $correo = $_POST["correo"];
                 $password = $_POST["password"];
                 if (empty($correo) and empty($password)) {
-                    header("Location: " . Conectar::ruta() . "index.php?m=2");
+                    header("Location: " . Conectar::ruta() . "/index.php?m=2");
                     exit();
                 }else{
-                    $sql="SELECT * FROM tm_usuarios WHERE usu_correo=? and usu_pass=? and rol_id = 2";
+                    $sql="SELECT * FROM tm_usuario WHERE usu_correo=? and usu_pass=? and rol_id = 2";
                     $sql=$conectar->prepare($sql);
                     $sql->bindValue(1,$correo);
                     $sql->bindValue(2,$password);
@@ -25,7 +26,7 @@
                         header("Location: " . Conectar::ruta() . "view/home/");
                         exit();
                     }else{
-                        header("Location: " . Conectar::ruta() . "index.php?m=1");
+                        header("Location: " . Conectar::ruta() . "/index.php?m=1");
                         exit();
                     }
                 }

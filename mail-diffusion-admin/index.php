@@ -1,5 +1,14 @@
+<?php 
+    require_once("config/conexion.php");
+    if(isset($_POST["enviar"]) and $_POST["enviar"] == "si"){
+        require_once("models/usuario.php");
+        $usuario = new Usuario();
+        $usuario->login();
+    }
+?>
+
 <!doctype html>
-<html lang="zxx">
+<html lang="es">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -25,19 +34,19 @@
                 <div class="d-table-cell">
                     <div class="login-form">
                         <div class="logo">
-                            <a href="dashboard-analytics.html"><img src="public\img\logo.png" alt="image"></a>
+                            <a href="dashboard-analytics.html"><img src="public\img\logo-mail.png" alt="image"></a>
                         </div>
 
                         <h2>Bienvenido</h2>
 
-                        <form>
+                        <form action="" method="post">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="email" placeholder="Email">
+                                <input type="text" class="form-control" id="correo" name="correo" placeholder="Email">
                                 <span class="label-title"><i class='bx bx-user'></i></span>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" class="form-control" name="password" placeholder="Contraseña">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
                                 <span class="label-title"><i class='bx bx-lock'></i></span>
                             </div>
 
@@ -52,9 +61,8 @@
                                 </div>
                             </div>
 
+                            <input type="hidden" name="enviar" value="si" >
                             <button type="submit" class="login-btn">Acceder</button>
-
-                            <p class="mb-0">No tienes una cuenta? <a href="register-with-image.html">Sign Up</a></p>
                         </form>
                     </div>
                 </div>
