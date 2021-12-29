@@ -12,3 +12,4 @@
         
 
         <link rel="icon" type="image/png" href="..\..\public\img\favicon.png">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
