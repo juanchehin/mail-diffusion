@@ -8,7 +8,7 @@
     <head>
         <?php require_once("../html/main-head.php") ?>
 
-        <title>Mantenimiento producto</title>
+        <title>Mantenimiento Usuario</title>
     </head>
 
     <body>
@@ -26,12 +26,12 @@
             
             <!-- Breadcrumb Area -->
             <div class="breadcrumb-area">
-                <h1>Mantenimiento de producto</h1>
+                <h1>Mantenimiento de Usuario</h1>
 
                 <ol class="breadcrumb">
                     <li class="item"><a href="../home/"><i class='bx bx-home-alt'></i></a></li>
 
-                    <li class="item">Mantenimiento de producto</li>
+                    <li class="item">Mantenimiento de Usuario</li>
                 </ol>
             </div>
             <!-- End Breadcrumb Area -->
@@ -48,7 +48,7 @@
 
         <!-- Vendors Min JS -->
         <?php require_once("../html/main-js.php") ?>
-        <script text="type/javascript" src="mntproducto.js"></script>
+        <script text="type/javascript" src="mntusuario.js"></script>
     </body>
 </html>
 
