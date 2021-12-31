@@ -45,3 +45,29 @@ $(document).ready(function() {
         }
     });
 });
+
+function eliminar(usu_id) {
+    Swal.fire({
+        title: 'Eliminar?',
+        text: "Esta seguro de eliminar el registro!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'No',
+        confirmButtonText: 'Si'
+    }).then((result) => {
+        if (result.isConfirmed) {
+
+            $.post("../../controller/usuario.php?op=eliminar", { usu_id: usu_id }, function(data) {
+                $('#usuario_data').DataTable().ajax.reload();
+            });
+
+            Swal.fire(
+                'Eliminado!',
+                'Eliminado Correctamente.',
+                'success'
+            )
+        }
+    })
+}
