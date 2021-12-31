@@ -38,38 +38,32 @@
 
             <div class="card mb-30">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h3>Basic Grid</h3>
+                    <h3>Listado de Usuario</h3>
+                </div>
 
                 <div class="card-body">
-                <table id="table_id" class="display">
-                    <thead>
-                        <tr>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Row 1 Data 1</td>
-                            <td>Row 1 Data 2</td>
-                        </tr>
-                        <tr>
-                            <td>Row 2 Data 1</td>
-                            <td>Row 2 Data 2</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table id="usuario_data" class="table display responsive nowrap">
+                        <thead>
+                            <tr>
+                                <th>Correo Electronico</th>
+                                <th>Estado</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
+            <!-- End Breadcrumb Area -->
+
             <div class="flex-grow-1"></div>
-
-            <!-- Start Footer End -->
-            <?php require_once("../html/footer.php") ?>
-            <!-- End Footer End -->
-
-        </div>
         <!-- End Main Content Wrapper Area -->
-        
+        <!-- Start Footer End -->
+        <?php require_once("../html/footer.php") ?>
+            <!-- End Footer End -->
 
         <!-- Vendors Min JS -->
         <?php require_once("../html/main-js.php") ?>
