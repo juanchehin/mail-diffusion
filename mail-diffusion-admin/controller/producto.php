@@ -39,11 +39,15 @@
                 $data[] = $sub_array;
             }
 
+            
+
+
             $results = array(
                 "sEcho"=>1, //Información para el datatables
                 "iTotalRecords"=>count($datos), //enviamos el total registros al datatable
                 "iTotalDisplayRecords"=>count($datos), //enviamos el total registros a visualizar
-                "aaData"=>$data);
+                "aaData"=>$data
+            );
 
                 // var_dump($results);
                 // die();

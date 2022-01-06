@@ -16,9 +16,7 @@ $(document).ready(function() {
         "responsive": true,
         "bInfo": true,
         "iDisplayLength": 30,
-        "order": [
-            [0, "desc"]
-        ],
+        "order": [[ 0, "desc" ]],
         "language": {
             "sProcessing": "Procesando...",
             "sLengthMenu": "Mostrar _MENU_ registros",
@@ -46,7 +44,7 @@ $(document).ready(function() {
     });
 });
 
-function eliminar(usu_id) {
+function eliminar(prod_id) {
     Swal.fire({
         title: 'Eliminar?',
         text: "Esta seguro de eliminar el registro!",
@@ -59,8 +57,8 @@ function eliminar(usu_id) {
     }).then((result) => {
         if (result.isConfirmed) {
 
-            $.post("../../controller/producto.php?op=eliminar", { usu_id: usu_id }, function(data) {
-                $('#usuario_data').DataTable().ajax.reload();
+            $.post("../../controller/producto.php?op=eliminar", { prod_id: prod_id }, function(data) {
+                $('#producto_data').DataTable().ajax.reload();
             });
 
             Swal.fire(

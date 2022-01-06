@@ -4,7 +4,7 @@
 ?>
 
 <!doctype html>
-<html lang="zxx">
+<html lang="es">
     <head>
         <?php require_once("../html/main-head.php") ?>
 
@@ -38,17 +38,18 @@
 
             <div class="card mb-30">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h3>Listado de Productos</h3>
+                    <h3>Listado de Producto</h3>
+                    <br>
+                    <button onClick="nuevo()" class="btn btn-outline-primary" id="btnnuevo">Nuevo</button>
                 </div>
 
                 <div class="card-body">
                     <table id="producto_data" class="table display responsive nowrap">
                         <thead>
                             <tr>
-                                <th>Producto</th>
-                                <th>Estado</th>
+                                <th>Nombre</th>
                                 <th>Precio</th>
-                                <th>Descuento</th>
+                                <th>Dscto</th>
                                 <th>Cupon</th>
                                 <th></th>
                                 <th></th>
@@ -63,6 +64,8 @@
 
             <div class="flex-grow-1"></div>
 
+            <?php require_once("mntmantenimiento.php")?>
+
             <!-- Start Footer End -->
             <?php require_once("../html/footer.php") ?>
             <!-- End Footer End -->
@@ -73,7 +76,7 @@
 
         <!-- Vendors Min JS -->
         <?php require_once("../html/main-js.php") ?>
-        <script text="type/javascript" src="mntproducto.js"></script>
+        <script type="text/javascript" src="mntproducto.js"></script>
     </body>
 </html>
 
