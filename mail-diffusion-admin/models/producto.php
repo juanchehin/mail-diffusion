@@ -35,19 +35,16 @@
         }
 
         public function insert_producto($prod_nom,$prod_precion,$prod_preciod,$prod_url,$prod_img,$prod_cupon,$prod_descrip){
+            
+
             $conectar=parent::conexion();
             parent::set_names();
-            $sql="INSERT INTO tm_productos (prod_id, prod_nom, prod_precion, prod_preciod, prod_url, prod_img, prod_cupon, prod_descrip, fech_crea, fech_modi, fech_elim, est) VALUES (NULL,?,?,?,?,?,?,?, now(), NULL, NULL, 1);";
-            $sql=$conectar->prepare($sql);
-            $sql->bindValue(1,$prod_nom);
-            $sql->bindValue(2,$prod_precion);
-            $sql->bindValue(3,$prod_preciod);
-            $sql->bindValue(4,$prod_url);
-            $sql->bindValue(5,$prod_img);
-            $sql->bindValue(6,$prod_cupon);
-            $sql->bindValue(7,$prod_descrip);
-            $sql->execute();
-            return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
+            $sql="INSERT INTO tm_productos (prod_id, prod_nom, prod_precion, prod_preciod, prod_url, prod_img, prod_cupon, prod_descrip, fecha_crea, fecha_modi, fecha_elim, est) VALUES (NULL,'$prod_nom','$prod_precion','$prod_preciod','$prod_url','$prod_img','$prod_cupon','$prod_descrip', now(), NULL, NULL, '1');";
+            
+            $stmt=$conectar->prepare($sql);
+            $stmt->execute();
+
+            return $resultado=$stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
         public function update_producto($prod_id,$prod_nom,$prod_precion,$prod_preciod,$prod_url,$prod_img,$prod_cupon,$prod_descrip){
