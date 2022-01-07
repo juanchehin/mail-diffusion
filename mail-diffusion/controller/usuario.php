@@ -6,8 +6,8 @@
     /* Inicializando Clase */
     $usuario = new Usuario();
 
-    // require_once("../models/Email.php");
-    // $email = new Email();
+    require_once("../models/email.php");
+    $email = new Email();
 
     /* Opcion de solicitud de controller */
     switch($_GET["op"]){
@@ -24,7 +24,7 @@
             break;
 
         case "emailBienvenida":
-            // $email->email_bienvenida($_POST["usu_correo"]);
+            $email->email_bienvenida($_POST["usu_correo"]);
             break;
     }
 ?>
