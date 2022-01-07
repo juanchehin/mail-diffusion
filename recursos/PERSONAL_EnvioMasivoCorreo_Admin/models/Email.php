@@ -84,11 +84,13 @@ class Email extends PHPMailer{
         $this->FromName = "Cupones de Descuento Udemy";
         $this->CharSet = 'UTF8';
 
+        echo $datos2;
         foreach ($datos2 as $row2) {
             $this->addBCC($row2["usu_correo"]);
+            echo $this->addBCC($row2["usu_correo"]);
         }
 
-        $this->WordWrap = 50;
+        $this->WordWrap = 50; // cantidad de caracteres
         $this->IsHTML(true);
         $this->Subject = "Cupones de Descuento Udemy";
         $cuerpo = file_get_contents('../public/Template_Producto.html');

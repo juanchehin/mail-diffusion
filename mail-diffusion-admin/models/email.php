@@ -7,26 +7,14 @@ require_once("../models/producto.php");
 
 require_once("../models/usuario.php");
 
-include("../.env.php");
-
-$gCorreo = $email;
-$gContrasena = $pass;
+// require_once("../.env.php");
 
 class Email extends PHPMailer{
 
-  
+  public $gCorreo = "";
+  public $gContrasena = "";
 
-    // protected $gCorreo="";//Correo Electronico 
-    // protected $gContrasena="";//Contraseña del la cuenta de correo
-
-
-    public function enviar_correo(){
-
-        $file = fopen("../logs/log.log", "w");
- 
-        fwrite($file, print_r($this->gCorreo));
- 
-        fclose($file);
+  public function enviar_correo(){
 
         $producto = new Producto();
         $datos = $producto->get_producto();
@@ -82,34 +70,42 @@ class Email extends PHPMailer{
              </tr>
             ';
         }
-
         $usuario = new Usuario();
-        $datos2 = $usuario->get_usuario();
+        $datos2 = $usuario->get_usuario();  // Listado de mails para enviar
 
-        $this->IsSMTP();
-        $this->Host = 'smtp.gmail.com';
-        $this->Port = 465;
-        $this->SMTPAuth = true;
+        $mail = new PHPMailer(true);
 
-        $this->Username = $this->gCorreo;
-        $this->Password = $this->gContrasena;
-        $this->From = $this->gCorreo;
-        $this->FromName = "Productos en promocion";
-        $this->CharSet = 'UTF8';
-        $this->addAddress('slidetucuman@gmail.com');
+        try {
+          $mail->isSMTP();                                            //Send using SMTP
+          $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+          $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+          $mail->Username   = $this->gCorreo;                     //SMTP username
+          $mail->Password   = $this->gContrasena;                    //SMTP password'';                               //SMTP password
+          $mail->SMTPSecure = 'ssl'; 
+          $mail->Port       = 465;  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-        foreach ($datos2 as $row2) {
-            $this->addBCC($row2["usu_correo"]);
+          //Recipients
+          $mail->setFrom($this->gCorreo, 'Slider');
+
+          // Agrego todos los correos a los cuales se enviara los articulos
+          foreach ($datos2 as $row2) {
+            // $this->addBCC($row2["usu_correo"]);
+            $mail->addAddress($row2["usu_correo"], $row2["usu_nom"]);     //Add a recipient
         }
 
-        $this->WordWrap = 50;
-        $this->IsHTML(true);
-        $this->Subject = "Productos en promocion";
-        $cuerpo = file_get_contents('../public/template_productos.html');
-        $cuerpo = str_replace('$tbldetalle', $tbody, $cuerpo);
-        $this->Body = $cuerpo;
-        $this->AltBody = strip_tags("Descuentos");
-        return $this->Send();
+          //Content
+          $mail->isHTML(true);
+          $mail->Subject = 'Productos';
+          $cuerpo = file_get_contents('../public/template_productos.html');
+          $cuerpo = str_replace('$tbldetalle', $tbody, $cuerpo);
+          $mail->Body = $cuerpo;
+          $mail->AltBody = strip_tags("Productos");;
+          return $mail->Send();
+
+        }catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+      }
     }
 }
+
 ?>

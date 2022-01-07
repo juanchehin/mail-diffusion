@@ -20,13 +20,6 @@
         case "listar":
             $datos = $producto->get_producto();
 
-            // var_dump($datos);
-            // die();
-
-            // $file = fopen("../logs/log.log", "w");
-            // fwrite($file,print_r($datos->fetchAll());
-            // fclose($file);
-
             $data = array();
             foreach($datos as $row){
                 $sub_array   = array();
@@ -48,9 +41,6 @@
                 "iTotalDisplayRecords"=>count($datos), //enviamos el total registros a visualizar
                 "aaData"=>$data
             );
-
-                // var_dump($results);
-                // die();
 
             echo json_encode($results);
             break;
