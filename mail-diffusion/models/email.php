@@ -2,45 +2,19 @@
 require('class.phpmailer.php');
 include("class.smtp.php");
 
-include '../.env';
-echo $email;
+// include '../.env.php';
+include("../.env.php");
+// echo $email;
+
+$gCorreo= $email;
+$gContrasena=$pass;
 
 class Email extends PHPMailer{
-    //protected $gCorreo="";//Correo Electronico 
-    //protected $gContrasena="";//Contraseña del la cuenta de correo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public function email_bienvenida($usu_correo){
         $this->IsSMTP();
-        $this->Host = 'smtp.office365.com';
+        $this->Host = 'smtp.gmail.com.com';
         $this->Port = 587;
         $this->SMTPAuth = true;
         $this->Username = $this->gCorreo;
@@ -52,7 +26,7 @@ class Email extends PHPMailer{
         $this->WordWrap = 50;
         $this->IsHTML(true);
         $this->Subject = "Bienvenido";
-        $cuerpo = file_get_contents('../public/Template_Bienvenida.html');
+        $cuerpo = file_get_contents('../public/template_welcome.html');
         $this->Body = $cuerpo;
         $this->AltBody = strip_tags("Descuentos");
         return $this->Send();

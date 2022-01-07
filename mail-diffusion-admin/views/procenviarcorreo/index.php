@@ -34,6 +34,18 @@
                     <li class="item">Enviar correos</li>
                 </ol>
             </div>
+
+            <div class="card mb-30">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h3>Enviar Correo</h3>
+                    <br>
+                    <button onClick="enviarCorreo()" class="btn btn-outline-primary" id="btnenviar">Enviar Correo</button>
+                </div>
+
+                <div class="card-body">
+
+                </div>
+            </div>
             <!-- End Breadcrumb Area -->
 
             <div class="flex-grow-1"></div>
@@ -48,7 +60,7 @@
 
         <!-- Vendors Min JS -->
         <?php require_once("../html/main-js.php") ?>
-        <script text="type/javascript" src="procenviarcorreo.js"></script>
+        <script type="text/javascript" src="procenviarcorreo.js"></script>
     </body>
 </html>
 

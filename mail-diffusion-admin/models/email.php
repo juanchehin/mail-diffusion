@@ -7,13 +7,26 @@ require_once("../models/producto.php");
 
 require_once("../models/usuario.php");
 
+include("../.env.php");
+
+$gCorreo = $email;
+$gContrasena = $pass;
+
 class Email extends PHPMailer{
 
-    protected $gCorreo="";//Correo Electronico 
-    protected $gContrasena="";//Contraseña del la cuenta de correo
+  
+
+    // protected $gCorreo="";//Correo Electronico 
+    // protected $gContrasena="";//Contraseña del la cuenta de correo
 
 
     public function enviar_correo(){
+
+        $file = fopen("../logs/log.log", "w");
+ 
+        fwrite($file, print_r($this->gCorreo));
+ 
+        fclose($file);
 
         $producto = new Producto();
         $datos = $producto->get_producto();
